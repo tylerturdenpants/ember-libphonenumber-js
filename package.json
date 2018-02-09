@@ -19,7 +19,8 @@
     "test": "ember try:each"
   },
   "dependencies": {
-    "ember-cli-babel": "^6.6.0"
+    "ember-cli-babel": "^6.6.0",
+	"webpack": "3.10.0"
   },
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.5",
@@ -40,7 +41,8 @@
     "ember-resolver": "^4.0.0",
     "ember-source": "~2.18.0",
     "eslint-plugin-ember": "^5.0.0",
-    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-node": "^6.0.0",
+	"libphonenumber-js": "^1.0.17",
     "loader.js": "^4.2.3"
   },
   "engines": {
