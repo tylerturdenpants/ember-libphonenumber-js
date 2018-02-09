@@ -20,7 +20,7 @@
   },
   "dependencies": {
     "ember-cli-babel": "^6.6.0",
-	"webpack": "3.10.0"
+    "webpack": "3.10.0"
   },
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.5",
@@ -32,6 +32,7 @@
     "ember-cli-htmlbars-inline-precompile": "^1.0.0",
     "ember-cli-inject-live-reload": "^1.4.1",
     "ember-cli-qunit": "^4.1.1",
+    "ember-cli-release": "^1.0.0-beta.2",
     "ember-cli-shims": "^1.2.0",
     "ember-cli-sri": "^2.1.0",
     "ember-cli-uglify": "^2.0.0",
@@ -42,7 +43,7 @@
     "ember-source": "~2.18.0",
     "eslint-plugin-ember": "^5.0.0",
     "eslint-plugin-node": "^6.0.0",
-	"libphonenumber-js": "^1.0.17",
+    "libphonenumber-js": "^1.0.17",
     "loader.js": "^4.2.3"
   },
   "engines": {
