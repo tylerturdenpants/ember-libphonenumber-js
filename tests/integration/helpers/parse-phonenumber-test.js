@@ -1,7 +1,7 @@
 import { moduleForComponent, test } from 'ember-qunit';
 import hbs from 'htmlbars-inline-precompile';
 
-moduleForComponent('parse--phonenumber', 'helper:parse--phonenumber', {
+moduleForComponent('parse--phonenumber', 'helper:parse-phonenumber', {
   integration: true
 });
 
@@ -9,7 +9,7 @@ moduleForComponent('parse--phonenumber', 'helper:parse--phonenumber', {
 test('it renders', function(assert) {
   this.set('inputValue', '1234');
 
-  this.render(hbs`{{parse--phonenumber inputValue}}`);
+  this.render(hbs`{{parse-phonenumber inputValue}}`);
 
   assert.equal(this.$().text().trim(), '1234');
 });
