@@ -1,4 +1,4 @@
-# ember-libphonenumber-js
+# ember-libphonenumber-js [![Build Status](https://travis-ci.org/tylerturdenpants/ember-libphonenumber-js.svg?branch=master)](https://travis-ci.org/tylerturdenpants/ember-libphonenumber-js)
 
 This addon provides a way to add Google's [`libphonenumber`](https://github.com/googlei18n/libphonenumber) to your ember project using [`libphonenumber-js`](https://github.com/catamphetamine/libphonenumber-js) from  [`https://github.com/catamphetamine/libphonenumber-js`](https://github.com/catamphetamine/libphonenumber-js).  This version of `libphonenumber` is much lighter than Google's, coming in at 120 KB.
 
