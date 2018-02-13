@@ -1,9 +1,12 @@
 {
   "name": "ember-libphonenumber-js",
   "version": "0.2.1",
-  "description": "The default blueprint for ember-cli addons.",
+  "description": "Expose libphonenumber-js to your ember project (with template helpers)",
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+	"phone",
+	"formatting",
+	"libphonenumber-js"
   ],
   "license": "MIT",
   "author": "",
@@ -11,7 +14,7 @@
     "doc": "doc",
     "test": "tests"
   },
-  "repository": "",
+  "repository": "https://github.com/tylerturdenpants/ember-libphonenumber-js",
   "scripts": {
     "build": "ember build",
     "lint:js": "eslint ./*.js addon addon-test-support app config lib server test-support tests",
