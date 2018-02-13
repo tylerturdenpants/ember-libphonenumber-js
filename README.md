@@ -1,26 +1,45 @@
 # ember-libphonenumber-js
 
-This README outlines the details of collaborating on this Ember addon.
+This addon provides a way to add Google's [`libphonenumber`](https://github.com/googlei18n/libphonenumber) to your ember project using [`libphonenumber-js`](https://github.com/catamphetamine/libphonenumber-js) from  [`https://github.com/catamphetamine/libphonenumber-js`](https://github.com/catamphetamine/libphonenumber-js).  This version of `libphonenumber` is much lighter than Google's, coming in at 120 KB.
+
+Additionally, this addon provides some template helper (`format` only at this time).  Computed properties are coming soon.
+
 
 ## Installation
 
-* `git clone <repository-url>` this repository
-* `cd ember-libphonenumber-js`
-* `npm install`
+* ember install ember-libphonenumber-js
 
-## Running
+## Usage
 
-* `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
+```js
+import { parse, format } from 'libphonenumber-js'
 
-## Running Tests
+parse('8 (800) 555 35 35', 'RU')
+// { country: 'RU', phone: '8005553535' }
 
-* `npm test` (Runs `ember try:each` to test your addon against multiple Ember versions)
-* `ember test`
-* `ember test --server`
+format('2133734253', 'US', 'International')
+// '+1 213 373 4253'
 
-## Building
+```
 
-* `ember build`
+For other uses, please visit [`https://github.com/catamphetamine/libphonenumber-js`](https://github.com/catamphetamine/libphonenumber-js)
 
-For more information on using ember-cli, visit [https://ember-cli.com/](https://ember-cli.com/).
+### Template Helper
+The helper takes 2 parameters, a phone number and a 2 byte country code (ex: 'US'). Additionally, you can force international formatting by providing `forceIntl=true`.
+```hbs
+{{format-phonenumber '6615551212' 'US'}} {{!-- (661) 555-1212 --}}
+```
+#### With `forceIntl=true`
+```hbs
+{{format-phonenumber '6615551212' 'US' forceIntl=true}} {{!-- +1 661 555 1212 --}}
+```
+
+## Credits
+
+The great majority of this addon is copied from the `ember-apollo-client` and `ember-cli-webpack-imports` addons. This addon is a single exposure using `ember-cli-webpack-import`.  If you need to import more `webpack` libs, I highly suggest using `ember-cli-webpack-imports`.
+
+
+A special thanks to:
+* Nikolay ([@catamphetamine](https://github.com/catamphetamine))
+* Blake Gentry ([@bgentry](https://github.com/bgentry))
+* Charles Demers ([@charlesdemers](https://github.com/charlesdemers))
