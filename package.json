@@ -1,12 +1,12 @@
 {
   "name": "ember-libphonenumber-js",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Expose libphonenumber-js to your ember project (with template helpers)",
   "keywords": [
     "ember-addon",
-	"phone",
-	"formatting",
-	"libphonenumber-js"
+    "phone",
+    "formatting",
+    "libphonenumber-js"
   ],
   "license": "MIT",
   "author": "",
