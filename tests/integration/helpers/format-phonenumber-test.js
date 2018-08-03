@@ -107,3 +107,10 @@ test('returns params untouched if not string | "I <3 Tomster"', function(assert)
 	this.render(hbs`{{format-phonenumber phoneNo}}`);
 	assert.equal(this.$().text().trim(), this.phoneNo);
 });
+
+test('return unformatted number if parse fails, unknown country (UN)| 017212345678', function(assert) {
+	this.set('phoneNo', '017212345678');
+
+	this.render(hbs`{{format-phonenumber phoneNo 'UN'}}`);
+	assert.equal(this.$().text().trim(), this.phoneNo);
+});

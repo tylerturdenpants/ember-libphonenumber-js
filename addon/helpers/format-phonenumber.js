@@ -11,12 +11,16 @@ export function formatPhoneNumber(params, hash) {
 	if(!countryCode){
 		return number;
 	}
-	let parsedNumber = parse(number, countryCode);
-	if(!isEmpty(parsedNumber.phone)){
-		let formatType = parsedNumber.country === countryCode ? NATIONAL : INTERNATIONAL;
-		return format(parsedNumber, forceIntl ? INTERNATIONAL : formatType);
+	try {
+		let parsedNumber = parse(number, countryCode);
+		if(!isEmpty(parsedNumber.phone)){
+			let formatType = parsedNumber.country === countryCode ? NATIONAL : INTERNATIONAL;
+			return format(parsedNumber, forceIntl ? INTERNATIONAL : formatType);
+		}
+		return number;
+	} catch (e) {
+		return number;
 	}
-	return number;
-}
+ }
 
 export default helper(formatPhoneNumber);
