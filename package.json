@@ -1,6 +1,6 @@
 {
   "name": "ember-libphonenumber-js",
-  "version": "0.2.2",
+  "version": "0.3.0",
   "description": "Expose libphonenumber-js to your ember project (with template helpers)",
   "keywords": [
     "ember-addon",
