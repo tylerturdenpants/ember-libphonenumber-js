@@ -6,6 +6,7 @@ const NATIONAL = 'National';
 const INTERNATIONAL = 'International';
 
 export function formatPhoneNumber(params, hash) {
+	// console.log(params, hash)
 	let [number, countryCode] = params;
 	let forceIntl = hash.forceIntl || false;
 	if(!countryCode){
@@ -13,10 +14,12 @@ export function formatPhoneNumber(params, hash) {
 	}
 	try {
 		let parsedNumber = parse(number, countryCode);
+		// console.log(number, countryCode, parsedNumber)
 		if(!isEmpty(parsedNumber.phone)){
 			let formatType = parsedNumber.country === countryCode ? NATIONAL : INTERNATIONAL;
 			return format(parsedNumber, forceIntl ? INTERNATIONAL : formatType);
 		}
+		// console.log(number);
 		return number;
 	} catch (e) {
 		return number;
