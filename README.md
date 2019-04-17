@@ -4,7 +4,15 @@ This addon provides a way to add Google's [`libphonenumber`](https://github.com/
 Additionally, this addon provides some template helper (`format` only at this time).  Computed properties are coming soon.
 
 
-## Installation
+Compatibility
+------------------------------------------------------------------------------
+
+* Ember.js v2.18 or above
+* Ember CLI v2.13 or above
+
+
+Installation
+------------------------------------------------------------------------------
 
 * ember install ember-libphonenumber-js
 
