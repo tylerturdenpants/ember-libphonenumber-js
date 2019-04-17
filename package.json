@@ -1,6 +1,6 @@
 {
   "name": "ember-libphonenumber-js",
-  "version": "0.4.0",
+  "version": "0.6.0",
   "description": "Expose libphonenumber-js to your ember project (with template helpers)",
   "keywords": [
     "ember-addon",
@@ -24,7 +24,7 @@
     "test:all": "ember try:each"
   },
   "dependencies": {
-	"caniuse-api": "^3.0.0",
+    "caniuse-api": "^3.0.0",
     "ember-auto-import": "^1.2.21",
     "ember-cli-babel": "^7.7.3",
     "libphonenumber-js": "~1.0.24"
