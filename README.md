@@ -40,13 +40,3 @@ The helper takes 2 parameters, a phone number and a 2 byte country code (ex: 'US
 ```hbs
 {{format-phonenumber '6615551212' 'US' forceIntl=true}} {{!-- +1 661 555 1212 --}}
 ```
-
-## Credits
-
-The great majority of this addon is copied from the `ember-apollo-client` and `ember-cli-webpack-imports` addons. This addon is a single exposure using `ember-cli-webpack-import`.  If you need to import more `webpack` libs, I highly suggest using `ember-cli-webpack-imports`.
-
-
-A special thanks to:
-* Nikolay ([@catamphetamine](https://github.com/catamphetamine))
-* Blake Gentry ([@bgentry](https://github.com/bgentry))
-* Charles Demers ([@charlesdemers](https://github.com/charlesdemers))
