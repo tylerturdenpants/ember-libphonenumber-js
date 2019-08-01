@@ -27,7 +27,7 @@
     "caniuse-api": "^3.0.0",
     "ember-auto-import": "^1.2.21",
     "ember-cli-babel": "^7.7.3",
-    "libphonenumber-js": "~1.0.24"
+    "libphonenumber-js": "~1.7.22"
   },
   "devDependencies": {
     "@ember/optional-features": "^0.7.0",
