@@ -25,7 +25,7 @@
   },
   "dependencies": {
     "caniuse-api": "^3.0.0",
-    "ember-auto-import": "^1.2.21",
+    "ember-auto-import": "^1.5.3",
     "ember-cli-babel": "^7.7.3",
     "libphonenumber-js": "~1.0.24"
   },
